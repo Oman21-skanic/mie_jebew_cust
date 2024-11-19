@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Shop - Trendy & Stylish</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+</head>
+<body>
+    <!-- slide 1 start -->
+    <div class="toast" id="toast"></div>
+    <header>
+        <nav class="nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-store"></i>
+                Modern Shop
+            </a>
+            <!-- navbar -->
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" onclick="showProducts()">
+                    <i class="fas fa-home"></i> Home    
+                </a>
+                <a href="#" onclick="showCart()">
+                    <i class="fas fa-shopping-cart"></i> Cart (<span id="cartCount">0</span>)
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- slide 1 end -->
+
+    <!-- slide 2 start -->
+    <div class="main-content">
+        
+
+        <div id="carouselExample" class="fade-in carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <a href="../ABOUTPAGE/about.html">
+                <img src="carose-jb.jpg" alt="">
+                </a>
+            </div>
+            <div class="carousel-item">
+            <img src="chili oil.jpg" alt="">
+            </div>
+            <div class="carousel-item">
+            <img src="pangsitgoreng.jpg" alt="Image 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" id="prevBtn">&#10094;</button>
+        <button class="carousel-control-next" id="nextBtn">&#10095;</button>
+    
+        <!-- Optional indicators -->
+        <div class="carousel-indicators" id="indicators"></div>
+        </div>
+
+            <!-- Cart Section -->
+            <div id="cartSection" class="cart-container" style="display: none;">
+                <h2><i class="fas fa-shopping-cart"></i> Your Shopping Cart</h2>
+                <div id="cartItems">
+                    <!-- Cart items will be added here -->
+                </div>
+                
+                <div class="cart-summary">
+                    <div class="cart-total">
+                        Total: Rp <span id="cartTotal">0</span>
+                    </div>
+                </div>
+    
+                <div class="checkout-form">
+                    <h3><i class="fas fa-shipping-fast"></i> Shipping Information</h3><br>
+                    <input type="text" id="customerName" placeholder="Full Name" required><br>
+                    <input type="text" id="customerPhone" placeholder="WhatsApp Number" required><br>
+                    <input type="text" id="customerAddress" placeholder="Complete Address" required><br>
+                    <button class="checkout-button" onclick="checkoutToWhatsApp()">
+                        <i class="fab fa-whatsapp"></i>
+                        Checkout via WhatsApp
+                    </button>
+                </div>
+            </div>      
+        </div>
+            </div>
+            <!-- slide2 end -->
+            <div class="slide4">
+            <!-- Products Section -->
+            <div id="productsSection">
+                <div class="products-grid" id="productsGrid">
+                    <!-- Products will be added here -->
+                </div>
+            </div>
+            </div>
+            <div id="mie-description" class="description-page fade-in">
+                <div class="description-content">
+                    <span class="close-btn" onclick="hideDescription('mie')">×</span>
+                    <h2>tes Ultra - Deskripsi Lengkap</h2>
+                    <h3>Spesifikasi Produk:</h3>
+                    <ul>
+                        <li>Layar AMOLED 6.5 Inch</li>
+                        <li>Kamera Utama 108 MP</li>
+                        <li>Baterai 5000 mAh</li>
+                        <li>RAM 12 GB</li>
+                        <li>Storage 256 GB</li>
+                    </ul>
+                    <h3>Deskripsi Lengkap:</h3>
+                    <p>Smartphone Ultra menghadirkan teknologi terkini dalam genggaman Anda. Dengan kamera resolusi tinggi, performa super cepat, dan desain modern, smartphone ini cocok untuk pengguna yang menginginkan pengalaman digital terbaik.</p>
+                </div>
+            </div>
+    <script src="script (1).js"></script>
+</body>
+</html>
